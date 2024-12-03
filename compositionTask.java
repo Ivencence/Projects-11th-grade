@@ -5,7 +5,7 @@ public class compositionTask {
 
         car.displayInfo();
 
-        // Task 7: Call the displayInfo() method to print the car's details.
+
     }
 }
 
