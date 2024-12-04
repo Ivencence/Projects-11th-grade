@@ -1,4 +1,4 @@
-public class Zoo {
+public class ZooSim {
     public static void main(String[] args) {
         Habitat hab1 = new Habitat("river", 200, 30);
         Habitat hab2 = new Habitat("forest", 300, 20);
@@ -54,6 +54,9 @@ class Habitat{
         this.size = size;
         this.temperature = temperature;
     }
+    String getType(){
+    return type    
+}
 }
 
 class Zoo {
