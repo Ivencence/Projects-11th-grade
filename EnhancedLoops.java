@@ -26,7 +26,7 @@ public class EnhancedLoops {
             }
             System.out.println("Here is your " + name[input]);
         }
-
+System.exit(0);
     }
 
     public static void Display(String[] name, int[] quantity, double[] price) {
