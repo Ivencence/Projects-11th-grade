@@ -9,14 +9,11 @@ public class CarGallery {
                 new Car("Mazda", "2", 2010, 20000, false)
         };
 
-        // Display all cars
         for (Car element : carArr) {
             element.Display();
         }
 
         Scanner myObj = new Scanner(System.in);
-
-        // Search for a car model
         System.out.println("What model are you looking for?");
         String input = myObj.next();
         for (Car element : carArr) {
@@ -25,7 +22,6 @@ public class CarGallery {
             }
         }
 
-        // Find the most expensive car
         int index = 0;
         double expensive = 0;
         for (int i = 0; i < carArr.length; i++) {
@@ -35,8 +31,6 @@ public class CarGallery {
             }
         }
         System.out.println("Most expensive is: " + carArr[index].getMake());
-
-        // Calculate average price
         double sum = 0;
         for (Car element : carArr) {
             sum += element.getPrice();
@@ -44,7 +38,6 @@ public class CarGallery {
         double average = sum / carArr.length;
         System.out.println("Average is " + average);
 
-        // Lease a car
         System.out.println("What car do you want to lease?");
         input = myObj.next();
         for (Car element : carArr) {
