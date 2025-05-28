@@ -1,6 +1,22 @@
 public class FinalProject {
     public static void main(String[] args) {
-
+    }
+    
+    public static void write(String path, String message){
+        try(FileWriter fw = new FileWriter(path, true)){
+         fw.write(message);
+        }
+        catch(IOException e){
+            System.out.println(e.getMessage());
+        }
+    }
+    public static void read(String path){
+        try(BufferedReader bf = new BufferedReader(new FileReader(path))){
+            bf.readLine();
+        }
+        catch(IOException e){
+            System.out.println(e.getMessage());
+        }
     }
 }
 class Author{
